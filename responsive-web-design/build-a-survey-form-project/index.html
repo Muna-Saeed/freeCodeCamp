@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css"/>
+    <title>Survey Form</title>
+  </head>
+  <body>
+    <h1 id="title">Survey Form</h1>
+    <p id="description">Please take a moment to fill out our survey.</p>
+    <form id="survey-form">
+
+      <label id="name-label" for="name">Name <input type="text" id="name" placeholder="Enter your name" required /></label>
+
+      <label id="email-label" for="email">Email <input type="email" id="email" placeholder="Enter your email" required/></label>
+
+      <label id="number-label" for="number">Number <input type="number" id="number" min="1" max="10" placeholder="Enter a number" /></label>
+      <fieldset>
+
+       <label for="dropdown">Select an option
+         <select id="dropdown" name="dropdown">
+           <option>Student</option>
+           <option>full time job</option>
+         </select>
+       </label>
+      </fieldset>
+
+      <fieldset>
+        <legend>Choose one of the following</legend>
+
+        <label id="radio" for="radio">
+          <input type="radio" name="radio" value="maybe" /> Maybe</label>
+          
+        <label id="radio" for="radio">
+          <input type="radio" name="radio"value="definetly" /> Definetly
+        </label>
+
+      </fieldset>
+
+      <fieldset>
+        <legend>Choose all that apply</legend>
+        <label id="checkboxes" for="checkboxes">
+          <input type="checkbox" name="checkboxes" value="option1" /> Maybe</label>
+          
+        <label id="checkboxes" for="checkboxes">
+          <input type="checkbox" name="checkboxes"value="option2" /> Definetly
+        </label>
+
+      </fieldset>
+
+      
+        <label id="comments" for="comments">Additional comments</label>
+         <textarea id="comments" name="comments" placeholder="Enter your comments"></textarea>
+        </label>
+
+        
+        <input type="submit" id="submit" />
+          
+      
+
+    </form>
+  </body>
+</html>
